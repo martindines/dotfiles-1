@@ -4,6 +4,9 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
 
+# Ensure .git is not copied to home directory If present it can cause
+# Atom CPU usage to rocket https://github.com/atom/atom/issues/17587
+
 function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
