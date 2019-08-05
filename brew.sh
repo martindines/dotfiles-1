@@ -102,5 +102,9 @@ brew install tree
 # brew install vbindiff
 brew install zopfli
 
+# Upgrading perl, pythom, or ruby can cause vim to break. Upgrade vim to ensure it is current
+# https://github.com/Homebrew/brew/issues/2356
+brew upgrade vim
+
 # Remove outdated versions from the cellar.
 brew cleanup
